@@ -77,7 +77,7 @@ test('Out For Repo', async ({ page }) => {
   */
   //check search box is working
   const searchInput = page.locator('.secOutForRepoOrInAgg #tblDeviceRepoOrInAggReport_filter input[type="search"]');
-  await searchInput.fill('860111051485872');
+  await searchInput.fill('861492066545937');
   await page.waitForTimeout(1000);
   await searchInput.fill('');
   await page.waitForTimeout(1000);

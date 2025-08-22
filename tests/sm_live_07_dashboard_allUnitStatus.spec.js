@@ -113,7 +113,7 @@ test('All Unit Current Status Report', async ({ page }) => {
   // await page.waitForTimeout(2000);
   //check search box is working
   const searchInput = page.locator('.secViewAllUnits input[type="search"]');
-  await searchInput.fill('860111051575409');
+  await searchInput.fill('861492066545937');
   await page.waitForTimeout(1000);
   
   // check page limit is working

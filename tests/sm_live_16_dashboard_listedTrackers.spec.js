@@ -108,7 +108,7 @@ test('View Listed Trackers', async ({ page }) => {
 
   
   const searchInput = page.locator('.secListAllDevices input[type="search"]');
-  await searchInput.fill('860111051575409');
+  await searchInput.fill('861492066545937');
   await page.waitForTimeout(2000);
   //clear the search box
   await searchInput.fill('');

@@ -23,10 +23,10 @@ test('Frequent Location', async ({ page }) => {
   // Wait for and interact with the search field
   const searchInput1 = page.locator('.select2-dropdown .select2-search__field').first();
   await searchInput1.waitFor({ state: 'visible', timeout: 60000 });
-  await searchInput1.fill('860111051484511');
+  await searchInput1.fill('868996064791239');
   await page.waitForTimeout(60000); // Wait for suggestions
   await searchInput1.press('Enter');
-  console.log('added device IMEI - 860111051484511');
+  console.log('added device IMEI - 868996064791239');
 
   await page.waitForTimeout(60000);
 
@@ -106,7 +106,7 @@ test('Frequent Location', async ({ page }) => {
 
   //check search box is working
   const searchInput2 = page.locator('.secTrackFreqStop #tblTrackFreqStopReport_filter input[type="search"]');
-  await searchInput2.fill('07/25/2025');
+  await searchInput2.fill('08/20/2025');
   await page.waitForTimeout(1000);
   // to clear search box
   await searchInput2.press('Control+a');

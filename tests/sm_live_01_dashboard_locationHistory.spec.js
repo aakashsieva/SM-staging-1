@@ -23,13 +23,13 @@ test('Location History', async ({ page }) => {
   // Wait for and interact with the search field
   const searchInput1 = page.locator('.select2-dropdown .select2-search__field').first();
   await searchInput1.waitFor({ state: 'visible', timeout: 60000 });
-  await searchInput1.fill('860111051487910');
+  await searchInput1.fill('868996064791239');
   await page.waitForTimeout(60000); // Wait for suggestions
   await searchInput1.press('Enter');
-  console.log('added device IMEI - 860111051487910');
+  console.log('added device IMEI - 868996064791239');
   
   // click on startDateRange input box and paste date range -  06-23-2025 - 07-03-2025
-  console.log('adding date range -> 07-14-2025 - 07-21-2025');
+  console.log('adding date range -> 08-18-2025 - 08-22-2025');
   const startDateRange = page.locator('.divTravelLogCard .startDateRange').first();
   await startDateRange.click();
   await startDateRange.press('Control+a');
@@ -37,7 +37,7 @@ test('Location History', async ({ page }) => {
   await page.waitForTimeout(1000);
   await startDateRange.fill('');
   await page.waitForTimeout(500); // Add small delay to ensure field is cleared
-  await startDateRange.type('07-14-2025 - 07-21-2025', {delay: 100}); // Type slowly to ensure accuracy
+  await startDateRange.type('08-18-2025 - 08-22-2025', {delay: 100}); // Type slowly to ensure accuracy
   await startDateRange.press('Enter');
   await page.waitForTimeout(1000);
 
@@ -103,7 +103,7 @@ test('Location History', async ({ page }) => {
 
   //check search box is working
   const searchInput2 = page.locator('.secTrackReport #tblTrackReport_filter input[type="search"]');
-  await searchInput2.fill('07/21/2025');
+  await searchInput2.fill('08/21/2025');
   await page.waitForTimeout(1000);
   // to clear search box
   await searchInput2.press('Control+a');
