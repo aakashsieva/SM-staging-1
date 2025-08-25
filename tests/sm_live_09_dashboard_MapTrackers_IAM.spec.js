@@ -56,7 +56,7 @@ test('View Map Trackers and Validate API Response', async ({ page }) => {
   console.log('New tab URL:', newPageUrl);
   
   // Validate the URL pattern in the new tab
-  if (!newPageUrl.includes('gpstracking/client/BlueHouse/maps/')) {
+  if (!newPageUrl.includes('gpstracking/client/summitmanagement/maps/')) {
     throw new Error(`Expected maps URL in new tab, but got: ${newPageUrl}`);
   }
   
